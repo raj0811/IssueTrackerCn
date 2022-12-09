@@ -1,0 +1,56 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    background-color: blue;
+    height: 18vh;
+    margin: 0%;
+    padding: 0%;
+   
+}
+
+a{
+    margin: 0%;
+    padding: 0%;
+}
+.nav-links{
+    background-color: black;
+}
+.h-links{
+    background-color: black;
+    display: flex;
+    height: 7vh;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.h-links li{
+    list-style: none;
+}
+
+.h-links li a{
+    font-size: 1.5rem;
+    color: aliceblue;
+    /* margin-left: 5vh; */
+}
+
+.logo{
+    background-color: aliceblue;
+    border-radius: 20vh;
+    border: 2px solid red;
+    height: 15vh;
+    width: 15vh;
+    position: relative;
+    bottom: 6vh;
+    left: 130vh;
+    
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20vh;
+}

@@ -1,0 +1,136 @@
+p,h1{
+    margin: 0%;
+    padding: 0%;
+  
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: radial-gradient( circle 971px at -9.5% 0.3%,  rgba(61,67,74,1) 7.9%, rgba(19,21,24,0.99)54%);
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    /* background-color: brown; */
+    height: 100vh;
+    justify-content: space-evenly;
+}
+.main{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    justify-content: space-evenly;
+    height: 10vh;
+    align-items: center;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.side{
+    border: 2px solid red;
+    width: 17%;
+}
+
+
+.project-list{
+    width: 100%;
+    /* border: 2px solid rgb(146, 17, 17); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+.project-div{
+    border: 2px solid black;
+    width: 40%;
+    background-color: darkgray;
+    margin: 1%;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+.project-name{
+  border-bottom: 2px solid rgb(252, 251, 251);
+  color: #c3c3c3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  border-top-left-radius: 3vh;
+  border-top-right-radius: 3vh;
+    /* background-color: aqua; */
+    padding: 1%;
+}
+.del{
+    margin-right: 2vh;
+}
+.del a{
+    text-decoration: none;
+    color: wheat;
+}
+.project-name h1{
+    margin-left: 10%;  
+  
+  
+}
+.project-details{
+   
+    border-radius: 3vh;
+}
+.project-details p,h1 small{
+    font-weight: 500;
+    color: #0d0e0c;
+}
+.project-details h1{
+    margin-left: 2%;  
+    
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+.data p a{
+    /* margin-left: 40%; */
+    text-decoration: none;
+    color: red;
+}
+.data p{
+    font-size: 1rem;
+    margin-left: 2%; 
+    width: 30%;
+    /* border: 2px solid black;  */
+}
+
+#flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+  }
+  
+  #panel {
+    padding: 50px;
+    display: none;
+  }
+
+  .accordion{
+    border: 2px solid red;
+    background-color: #0d0e0c;
+  }
