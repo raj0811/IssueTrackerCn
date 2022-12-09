@@ -11,6 +11,7 @@ body{
     background-image: radial-gradient( circle 971px at -9.5% 0.3%,  rgba(61,67,74,1) 7.9%, rgba(19,21,24,0.99)54%);
     margin: 0%;
     padding: 0%;
+    background-size: cover;
 }
 
 .container{
@@ -21,15 +22,16 @@ body{
     justify-content: space-evenly;
 }
 .main{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
 }
 .head{
     display: flex;
     flex-direction: row;
-    background-color: aqua;
+    background-image: radial-gradient( circle 1192px at 21.5% 49.5%,  rgba(91,21,55,1) 0.1%, rgba(0,0,0,1) 100.2% );
+    color: #c3c3c3;
     justify-content: space-evenly;
     height: 10vh;
     align-items: center;
@@ -96,6 +98,7 @@ body{
 .project-details p,h1 small{
     font-weight: 500;
     color: #0d0e0c;
+    
 }
 .project-details h1{
     margin-left: 2%;  
@@ -105,11 +108,13 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 1%;
+    font-size: 1.3rem;
 }
 .data p a{
     /* margin-left: 40%; */
     text-decoration: none;
     color: red;
+    font-size: 1.3rem;
 }
 .data p{
     font-size: 1rem;

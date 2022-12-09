@@ -11,6 +11,9 @@ const passportLocal = require('./config/passport-local-strategy');
 const MongoDBStore = require('connect-mongodb-session')(session);
 // const MongoStore = require('connect-mongo')(session);
 
+
+
+
 const passportGoogle=require('./config/passport-google-oauth2-strategy')
 
 const app= express();
@@ -22,7 +25,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 
-
+app.use(expressLayouts);
+// extract style and script from subpages to layout
 
 
 // setup view engin

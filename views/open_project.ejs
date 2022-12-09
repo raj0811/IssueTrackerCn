@@ -13,23 +13,21 @@
 </head>
 <body>
     
+    
 
-
-   <nav class="nav">
-
-   </nav>
+  
    
         <div class="project-div">
             
 
-            <div class="data">
+            <div class="data container">
                 <p><small>Project Name: </small><%= open_projects.projectName %></p>
                 <p><small>Auther Name</small> <%= open_projects.auther %></p>
                 
                 <p><%= open_projects.issue %></p>
                 <p> <small>Project Description</small>  
                     <p><%= open_projects.description %> </p> 
-                    <p><%= open_projects._id %> </p> 
+                    
                   
                 
                 
@@ -39,27 +37,23 @@
 
             
         </div>
-        <h1>Isues </h1>
+        <h1>Issues </h1>
 
-        <div class="accordion">
+        <div class="accordion container">
 
-            <div id="flip"><i class="fa-solid fa-plus">Add Project</i></div>
+            <div id="flip"><i class="fa-solid fa-plus">Create Issue</i></div>
             <div id="panel">
                 
                 <%- include('_create_issue_form') %>
                
 
             </div>
-            <div>
-             
-                <input type="button" id="show" value="Show all">
-             
-            </div>
+            
 
 
         </div>
 
-        <div>
+        <div class="container filter-box">
             <div>
                 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
             </div>
@@ -79,7 +73,7 @@
             </div>
         </div>
         
-      <section id="myUL">
+      <section id="myUL" class="container">
         <% for (i of open_projects.issues){%>
             <ul  class="issues-list">
                 <li style="display: flex;">

@@ -4,10 +4,11 @@
 }
 
 footer{
-    background-color: darkgray;
+    background-image: radial-gradient( circle farthest-corner at -8.9% 51.2%,  rgba(255,124,0,1) 0%, rgba(255,124,0,1) 15.9%, rgba(255,163,77,1) 15.9%, rgba(255,163,77,1) 24.4%, rgba(19,30,37,1) 24.5%, rgba(19,30,37,1) 66% );
     display: flex;
     justify-content: space-between;
     height: 30vh;
+    color: aliceblue;
 }
 footer div{
     width: 30%;
@@ -15,8 +16,26 @@ footer div{
 }
 li{
     list-style: none;
+    color: aliceblue;
 }
 ul{
     margin-top: 2vh;
     margin-left: 1vh;
+}
+a{
+    color: rgb(228, 13, 13);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.div-3{
+    /* border: 3px solid red; */
+}
+.div-2 ul{
+    margin-left: 20%;
+}
+.div-1 ul{
+    margin-left: 25%;
+}
+.div-3 ul{
+    margin-top: 25%;
 }

@@ -1,0 +1,45 @@
+.user-sup{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.user-sup form{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 30%; */
+}
+
+.user-sup form input{
+    border-radius: 10px;
+    height: 4vh;
+    margin-top: 2%;
+    width: 40vh;
+}
+.gauth{
+    border: 2px solid black;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   padding: 0.3%;
+    border-radius: 20px;
+    margin-top: 1%;
+}
+.c{
+    height: 80vh;
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#g{
+    /* border: 2px solid magenta; */
+    margin-top: 10%;
+}

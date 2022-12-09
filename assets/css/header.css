@@ -4,8 +4,8 @@
 }
 
 header{
-    background-color: blue;
-    height: 18vh;
+    background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+    /* height: 18vh; */
     margin: 0%;
     padding: 0%;
    
@@ -16,10 +16,10 @@ a{
     padding: 0%;
 }
 .nav-links{
-    background-color: black;
+    /* background-color: black; */
 }
 .h-links{
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     height: 7vh;
     width: 50%;
@@ -41,8 +41,8 @@ a{
     background-color: aliceblue;
     border-radius: 20vh;
     border: 2px solid red;
-    height: 15vh;
-    width: 15vh;
+    height: 10vh;
+    width: 10vh;
     position: relative;
     bottom: 6vh;
     left: 130vh;

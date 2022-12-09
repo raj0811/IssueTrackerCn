@@ -1,24 +1,16 @@
-*{
-    
-    background-color: #3F3F3F;
-    color: aliceblue;
-    padding: 0%;
-    margin: 0%;
+body{
+    background-image: radial-gradient( circle 971px at -9.5% 0.3%,  rgba(61,67,74,1) 7.9%, rgba(19,21,24,0.99)54%);
 }
 
-.nav{
-    padding: 0%;
-    margin: 0%;
-    background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
 
-
-    height: 10vh;
-    width: 100%;
+.project-div{
+    /* border: 2px solid red; */
+    padding: 1%;
 }
 
 .data{
     border: 2px solid grey;
-    height: 30vh;
+   
     display: flex;
     flex-direction: column;
     padding: 2%;
@@ -50,7 +42,7 @@
 }
 
 .issues-list{
-    border: 2px solid red;
+    border: 2px solid wheat;
     padding: 1%;
     /* display: flex; */
     flex-direction: column;
@@ -59,4 +51,14 @@
 }
 .issues-list li{
     list-style: none;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+}
+.filter-box{
+    margin-top: 2%;
+}
+section{
+    color: aliceblue;
 }
