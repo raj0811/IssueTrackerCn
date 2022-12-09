@@ -6,10 +6,11 @@ const port = 8003;
 
 const db=require('./config/mongoose');
 const session = require('express-session');
+// const MongoStore = require('connect-mongo');
 const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
-const MongoDBStore = require('connect-mongodb-session')(session);
-// const MongoStore = require('connect-mongo')(session);
+// const MongoDBStore = require('connect-mongodb-session')(session);
+const MongoStore = require('connect-mongo');
 
 
 
@@ -35,22 +36,29 @@ app.set('views', './views');
 
 
 app.use(session({
-    name: 'issueTracker',
-    secret:'#skey',
+    name: 'quoro',
+    secret: 'hellochetan',
     saveUninitialized: false,
     resave: false,
+  
     cookie: {
-        maxAge: (1000 * 60 * 100)
+      maxAge: (1000 * 60 * 100)
+  
     },
-    store: new MongoDBStore({
-        mongooseConnection: db,
-        autoRemove: 'disable'
-    },
-    function(err){
-        console.log(err || 'connect - mongodb setup ok');
-    }
-    )
-}));
+   
+  
+    store: MongoStore.create({
+  
+        mongoUrl: 'mongodb+srv://raj:04jxFnDAdZh4uc29@cluster0.coznxd0.mongodb.net/?retryWrites=true&w=majority',
+        autoRemove: 'disabled'
+  
+      },
+      function (err) {
+        console.log(err);
+      })
+  
+  
+  }))
 
 
 app.use(passport.initialize());
