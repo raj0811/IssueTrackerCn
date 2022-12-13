@@ -5,6 +5,7 @@ module.exports.home=function(req,res){
 
     
     Project.findById(req.params.id,function(err,project){
+        console.log(req.params.id);
         Project.find({}).populate('user').exec(function(err,projects){
 
             return res.render('home',{

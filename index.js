@@ -1,10 +1,10 @@
-const express=require('express');       
+const express = require('express');
 const cookieParser = require('cookie-parser');
-var expressLayouts = require('express-ejs-layouts');   
+var expressLayouts = require('express-ejs-layouts');
 const port = 8003;
 
 
-const db=require('./config/mongoose');
+const db = require('./config/mongoose');
 const session = require('express-session');
 // const MongoStore = require('connect-mongo');
 const passport = require('passport');
@@ -15,9 +15,9 @@ const MongoStore = require('connect-mongo');
 
 
 
-const passportGoogle=require('./config/passport-google-oauth2-strategy')
+const passportGoogle = require('./config/passport-google-oauth2-strategy')
 
-const app= express();
+const app = express();
 app.use(express.static('assets'));
 
 
@@ -40,25 +40,25 @@ app.use(session({
     secret: 'hellochetan',
     saveUninitialized: false,
     resave: false,
-  
+
     cookie: {
-      maxAge: (1000 * 60 * 100)
-  
+        maxAge: (1000 * 60 * 100)
+
     },
-   
-  
+
+
     store: MongoStore.create({
-  
+
         mongoUrl: 'mongodb+srv://raj:04jxFnDAdZh4uc29@cluster0.coznxd0.mongodb.net/?retryWrites=true&w=majority',
         autoRemove: 'disabled'
-  
-      },
-      function (err) {
-        console.log(err);
-      })
-  
-  
-  }))
+
+    },
+        function (err) {
+            console.log(err);
+        })
+
+
+}))
 
 
 app.use(passport.initialize());
@@ -72,7 +72,7 @@ app.use(passport.setAuthenticatedUser)
 // app.set('layout extractScripts', true);
 app.use('/', require('./routes'));
 
-app.listen(port, function(err) {
+app.listen(port, function (err) {
     if (err) {
         console.log(`Error in running the server: ${err}`);
     }

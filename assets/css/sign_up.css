@@ -4,10 +4,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* background-color: aqua; */
+    height: 100%;
 }
 
 h1{
     text-align: center;
+    margin: 0%;
+    padding: 0%;
 }
 
 .user-sup form{
@@ -34,12 +38,13 @@ h1{
 }
 .c{
     height: 80vh;
-    /* border: 2px solid rebeccapurple; */
+    /* border: 2px solid rgb(15, 121, 243); */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 #g{
     /* border: 2px solid magenta; */
-    margin-top: 10%;
+    height: 80%;
+    
 }

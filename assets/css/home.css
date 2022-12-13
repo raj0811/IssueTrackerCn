@@ -8,7 +8,7 @@ p,h1{
     padding: 0%;
 }
 body{
-    background-image: radial-gradient( circle 971px at -9.5% 0.3%,  rgba(61,67,74,1) 7.9%, rgba(19,21,24,0.99)54%);
+    background-image: url('https://wallpaperaccess.com/full/1092594.jpg');
     margin: 0%;
     padding: 0%;
     background-size: cover;
@@ -126,7 +126,7 @@ body{
 #flip {
     padding: 5px;
     text-align: center;
-    background-color: #e5eecc;
+    /* background-color: #c6e670; */
     border: solid 1px #c3c3c3;
   }
   
@@ -136,6 +136,14 @@ body{
   }
 
   .accordion{
-    border: 2px solid red;
-    background-color: #0d0e0c;
+    border: 2px solid wheat;
+    /* background-color: #82b450;  */
+    width: 50%;
+    align-self: center;
+    color: white;
+    
+  }
+  .c{
+    /* background-color: aliceblue; */
+    height: min-content;
   }

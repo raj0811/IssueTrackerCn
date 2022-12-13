@@ -4,25 +4,34 @@
     /* border: 5px solid red; */
     display: flex;
     flex-direction: column;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
   }
  
 #project-feed form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1%;
+    
     /* border: 2px solid black; */
+    width: 100%;
+    height: min-content;
+    padding: 0%;
+    margin: 0%;
+    
 }
 
 #project-feed form input{
-    width: 40%;
-    margin: 0.5%;
+    width: 70%;
+    
     height: 4vh;
     border: 2px solid black;
 }
 
 textarea{
-    width: 40%;
+    width: 70%;
+    height: 15vh;
     margin: 0.5%;
     border: 2px solid black;
 }
@@ -33,7 +42,7 @@ textarea{
 }
 
 #project-feed form #addBtn{
-    background-color: #5dbea3;
+    background-color: #343534;
     width: 20vh;
     height: 5vh;
 }
